@@ -1,0 +1,25 @@
+[features]
+resolution = false
+skip-lint = false
+
+[programs.localnet]
+prediction_market = "9KQjnCXwNcnaojsfvuD894UjnCKvgwEDe4Kt1nfpDNHB"
+
+[programs.devnet]
+prediction_market = "9KQjnCXwNcnaojsfvuD894UjnCKvgwEDe4Kt1nfpDNHB"
+
+[programs.mainnet]
+prediction_market = "9KQjnCXwNcnaojsfvuD894UjnCKvgwEDe4Kt1nfpDNHB"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[workspace]
+types = "target/types"
